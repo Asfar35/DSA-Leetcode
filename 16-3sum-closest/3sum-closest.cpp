@@ -7,7 +7,7 @@ public:
             for(int j = i+1; j<n; j++){
                 for(int k = j+1; k<n; k++){
                     int sum = nums[i] + nums[j] + nums[k];
-                    if(abs(sum-target)<abs(ans-target))ans = sum;
+                    if(abs(target-sum)<abs(target-ans))ans = sum;
                 }
             }
         }
